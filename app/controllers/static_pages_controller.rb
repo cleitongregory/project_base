@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
   def index
-    @nome = "Cleiton Ivan Gregory"
+    redirect_to user_path(current_user) if user_signed_in?
   end
 
   def sobre
