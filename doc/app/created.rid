@@ -1,0 +1,14 @@
+Mon, 16 Mar 2020 16:20:46 -0300
+README.rdoc	Mon, 16 Mar 2020 13:35:45 -0300
+app/controllers/application_controller.rb	Mon, 16 Mar 2020 15:56:51 -0300
+app/controllers/contacts_controller.rb	Mon, 16 Mar 2020 16:09:26 -0300
+app/controllers/sessions_controller.rb	Mon, 16 Mar 2020 15:55:55 -0300
+app/controllers/static_pages_controller.rb	Mon, 16 Mar 2020 14:48:04 -0300
+app/controllers/users_controller.rb	Mon, 16 Mar 2020 15:55:47 -0300
+app/helpers/application_helper.rb	Mon, 16 Mar 2020 13:35:45 -0300
+app/helpers/contacts_helper.rb	Mon, 16 Mar 2020 14:28:09 -0300
+app/helpers/sessions_helper.rb	Mon, 16 Mar 2020 14:16:12 -0300
+app/helpers/static_pages_helper.rb	Mon, 16 Mar 2020 13:38:40 -0300
+app/helpers/users_helper.rb	Mon, 16 Mar 2020 13:58:47 -0300
+app/models/contact.rb	Mon, 16 Mar 2020 14:50:06 -0300
+app/models/user.rb	Mon, 16 Mar 2020 14:30:33 -0300
