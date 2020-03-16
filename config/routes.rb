@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
   resources :users, only: [:show, :new, :create, :edit, :update]
   resources :contacts, only: [:index, :new, :create, :edit, :update, :destroy, :show]
+  resources :events, only: [:index, :new, :create, :edit, :update, :destroy, :show]
   resources :sessions, only: [:new, :create, :destroy]
 end

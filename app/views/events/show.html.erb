@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3 col-xs-12">
+    <h1>Visualizar Contato</h1>
+    <%= form_for @event do |f| %>
+      <fieldset disabled>
+        <%= render 'fields', f: f %>
+      </fieldset>
+    <% end %>
+    <%= link_to 'Voltar', events_path, class: 'btn btn-primary' %>
+  </div>
+</div>

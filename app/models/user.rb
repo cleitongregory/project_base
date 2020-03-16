@@ -12,6 +12,7 @@ class User < ActiveRecord::Base
                                     uniqueness: { case_sensitive: true }
 
   has_many :contacts
+  has_many :events
 
   private
     def email_downcase
