@@ -17,6 +17,16 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def update
+    if current_user.update(user_params)
+      flash[:success] = 'Dados atualizados com sucesso'
+      #redirect_to user_contacts_url(current_user)
+      redirect_to user_path
+    else
+      render 'edit'
+    end
+  end
+
   private
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -6,8 +8,13 @@ Rails.application.routes.draw do
   root 'static_pages#index'
   get 'sobre', to: 'static_pages#sobre'
   get 'contato', to: 'static_pages#contato'
+  get 'cadastro',   to: 'users#new'
+  get 'entrar',   to: 'sessions#new'
+  post 'entrar',  to: 'sessions#create'
+  delete 'sair',  to: 'sessions#destroy'
 
-  resources :users, only: [:new, :create]
+  resources :users, only: [:show, :new, :create, :edit, :update]
+  resources :sessions, only: [:new, :create, :destroy]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
